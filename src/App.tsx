@@ -1,12 +1,17 @@
-import { StyleGlobal } from './style/CSSglobal'
+import { StyleGlobal, Container } from './style/CSSglobal'
+import { Header } from './components/Header'
+import { NavBar } from './containers/Navbar'
+import { Content } from './containers/Content'
 
 function App() {
   return (
     <>
       <StyleGlobal />
-      <h1>Quonox</h1>
-      <p>Sua loja online de games</p>
-      <button>Comprar</button>
+      <Header />
+      <Container>
+        <NavBar />
+        <Content />
+      </Container>
     </>
   )
 }

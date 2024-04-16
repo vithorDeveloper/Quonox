@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-const cores = {
+export const cores = {
   corFundo: '#171a1e',
   hoverTexto: '#bc7725',
   corTexto: '#9a9a9a',
@@ -13,18 +13,18 @@ export const StyleGlobal = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
   }
 
   body{
     font-family: "Rubik", sans-serif;
+
     background-color: ${cores.corFundo};
+    color: ${cores.corTexto};
     
     h1, h2{
       color: ${cores.corTitulo};
-    }
-
-    p{
-      color: ${cores.corTexto};
     }
 
     button{
@@ -34,4 +34,14 @@ export const StyleGlobal = createGlobalStyle`
       font-family: "Rubik", sans-serif;
     }
   }
+`
+export const Container = styled.main`
+  width: 1024px;
+
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  display: grid;
+  grid-template-columns: 10rem auto;
+  column-gap: 2rem;
 `
