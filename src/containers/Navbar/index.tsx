@@ -1,11 +1,18 @@
-import { ContainerNavbar } from './style'
+import {
+  AppleLogo,
+  SteamLogo,
+  TwitchLogo,
+  WindowsLogo,
+  YoutubeLogo
+} from '@phosphor-icons/react'
+import { ContainerNavbar, Lista } from './style'
 
 export const NavBar = () => (
   <>
     <ContainerNavbar>
       <h2>Categorias</h2>
 
-      <ul className="listaCategorias">
+      <Lista className="listaCategorias">
         <li>
           <a href="">RPG</a>
         </li>
@@ -24,11 +31,11 @@ export const NavBar = () => (
         <li>
           <a href="">FPS</a>
         </li>
-      </ul>
+      </Lista>
 
       <h2>Acesso Rápido</h2>
 
-      <ul className="listaAcessoRapido">
+      <Lista>
         <li>
           <a href="">Novidades</a>
         </li>
@@ -38,7 +45,25 @@ export const NavBar = () => (
         <li>
           <a href="">Em Breve</a>
         </li>
-      </ul>
+      </Lista>
+
+      <div className="containerLogos">
+        <span>
+          <TwitchLogo size={26} />
+        </span>
+        <span>
+          <SteamLogo size={26} />
+        </span>
+        <span>
+          <YoutubeLogo size={26} />
+        </span>
+        <span>
+          <WindowsLogo size={26} />
+        </span>
+        <span>
+          <AppleLogo size={26} />
+        </span>
+      </div>
     </ContainerNavbar>
   </>
 )

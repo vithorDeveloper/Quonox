@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import { cores } from '../../style/CSSglobal'
 
 export const ContainerNavbar = styled.nav`
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(9, 9, 9, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px) saturate(100%);
+  background-color: rgba(37, 37, 40, 0.4);
+  border: 1px solid rgba(95, 95, 95, 0.1);
+
+  box-shadow: 0px 0px 11px 0px rgba(105, 105, 105, 0.1);
 
   border-radius: 0.8rem;
 
@@ -15,21 +14,42 @@ export const ContainerNavbar = styled.nav`
 
   h2 {
     font-size: 1rem;
+
     padding-bottom: 0.5rem;
   }
 
-  ul {
-    li {
-      padding-left: 0.6rem;
+  .containerLogos {
+    display: flex;
+    justify-content: space-between;
 
-      a {
-        color: ${cores.corTexto};
-        font-size: 0.9rem;
+    span {
+      transition: all 0.2s;
+
+      cursor: pointer;
+
+      &:hover {
+        color: ${cores.hoverTexto};
       }
     }
   }
+`
 
-  .listaCategorias {
-    padding-bottom: 4rem;
+export const Lista = styled.ul`
+  padding-bottom: 4rem;
+
+  li {
+    padding: 0 0 0.3rem 0.6rem;
+
+    a {
+      color: ${cores.corTexto};
+
+      font-size: 0.9rem;
+
+      transition: all 0.2s;
+
+      &:hover {
+        color: ${cores.hoverTexto};
+      }
+    }
   }
 `

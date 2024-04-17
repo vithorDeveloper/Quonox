@@ -42,6 +42,6 @@ export const Container = styled.main`
   padding: 1rem 0;
 
   display: grid;
-  grid-template-columns: 10rem auto;
+  grid-template-columns: 12rem auto;
   column-gap: 2rem;
 `
