@@ -22,6 +22,8 @@ export const StyleGlobal = createGlobalStyle`
 
     background-color: ${cores.corFundo};
     color: ${cores.corTexto};
+
+    padding: 0 .5rem;
     
     h1, h2{
       color: ${cores.corTitulo};
