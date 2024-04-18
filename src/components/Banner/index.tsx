@@ -5,7 +5,7 @@ import { Tag } from '../Tag'
 
 export const Banner = () => (
   <SectionBanner backgroundImage={bannerImg}>
-    <Tag className="tag" titulo={'Em Destaque'} />
+    <Tag>{'Em Destaque'}</Tag>
 
     <div>
       <h2>Resident Evil 4</h2>

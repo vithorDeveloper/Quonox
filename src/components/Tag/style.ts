@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 import { cores } from '../../style/CSSglobal'
+import { Titulo } from '.'
 
-export type TamanhoFonte = {
-  fontSize?: string
-}
-
-export const ContainerTag = styled.span<TamanhoFonte>`
+export const ContainerTag = styled.span<Titulo>`
   background-color: ${cores.corButton};
   color: ${cores.corFundo};
 
@@ -15,13 +12,5 @@ export const ContainerTag = styled.span<TamanhoFonte>`
 
   border-radius: 0.5rem;
 
-  cursor: pointer;
-
   transition: all 0.2s;
-
-  &:hover {
-    background-color: ${cores.corFundo};
-    color: ${cores.corButton};
-    border: 1px solid ${cores.corFundo};
-  }
 `

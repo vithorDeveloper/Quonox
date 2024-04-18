@@ -8,7 +8,7 @@ export const Header = () => (
 
       <div className="divCart">
         <a href="#">
-          0 jogo(s) <ShoppingCart size={30} />
+          0 <ShoppingCart size={30} />
         </a>
 
         <UserCircle className="iconUser" size={30} />

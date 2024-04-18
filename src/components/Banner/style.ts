@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../style/CSSglobal'
+import { ContainerTag } from '../Tag/style'
 
 type SectionBannerProps = {
   backgroundImage: string
@@ -44,7 +45,7 @@ export const SectionBanner = styled.section<SectionBannerProps>`
     }
   }
 
-  .tag {
+  ${ContainerTag} {
     position: absolute;
     top: 1rem;
     left: 6rem;
