@@ -6,7 +6,7 @@ export const ContainerTag = styled.span<Titulo>`
   background-color: ${cores.corButton};
   color: ${cores.corFundo};
 
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
 
   font-size: ${(props) => (props.fontSize ? props.fontSize : '1rem')};
 

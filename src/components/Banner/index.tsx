@@ -1,11 +1,11 @@
 import { Desktop, GameController } from '@phosphor-icons/react'
 import bannerImg from '../../assets/blur60.png'
-import { SectionBanner } from './style'
+import { ButtonBanner, SectionBanner } from './style'
 import { Tag } from '../Tag'
 
 export const Banner = () => (
   <SectionBanner backgroundImage={bannerImg}>
-    <Tag>{'Em Destaque'}</Tag>
+    <Tag>Em Destaque</Tag>
 
     <div>
       <h2>Resident Evil 4</h2>
@@ -21,6 +21,6 @@ export const Banner = () => (
       <p>Por R$ 59,90</p>
     </div>
 
-    <button>Aproveitar</button>
+    <ButtonBanner>Aproveitar</ButtonBanner>
   </SectionBanner>
 )
