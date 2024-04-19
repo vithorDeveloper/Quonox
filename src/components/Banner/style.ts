@@ -22,8 +22,6 @@ export const SectionBanner = styled.section<SectionBannerProps>`
 
   position: relative;
 
-  margin-bottom: 2rem;
-
   div {
     position: absolute;
     bottom: 0.5rem;

@@ -5,6 +5,8 @@ import { ListaDeProdutos } from '../ListaProdutos'
 export const Content = () => (
   <ContainerContent>
     <Banner />
-    <ListaDeProdutos />
+    <ListaDeProdutos titulo="Promoções" />
+    <ListaDeProdutos titulo="Promoções" />
+    <ListaDeProdutos titulo="Promoções" />
   </ContainerContent>
 )

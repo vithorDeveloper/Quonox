@@ -2,23 +2,29 @@ import { Tag } from '../Tag'
 import { ContainerCard, ImagemCard } from './style'
 import { Desktop, GameController } from '@phosphor-icons/react'
 
-export type ImagemDoJogo = {
+export type PropsCard = {
   backgroundImage: string
   nomeDoJogo: string
   descricao: string
+  infos: string[]
 }
 
 export const CardProduto = ({
   backgroundImage,
   nomeDoJogo,
-  descricao
-}: ImagemDoJogo) => (
+  descricao,
+  infos
+}: PropsCard) => (
   <ContainerCard>
     <ImagemCard className="imagemCard">
       <img src={backgroundImage} />
+
       <div className="tags">
-        <Tag fontSize={'0.7rem'}>R$ 59,90</Tag>
-        <Tag fontSize={'0.7rem'}>-33%</Tag>
+        {infos.map((info) => (
+          <Tag fontSize={'0.7rem'} key={info}>
+            {info}
+          </Tag>
+        ))}
       </div>
     </ImagemCard>
 
