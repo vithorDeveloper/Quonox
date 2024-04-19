@@ -25,7 +25,7 @@ export const StyleGlobal = createGlobalStyle`
 
     padding: 0 .5rem;
     
-    h1, h2{
+    h1, h2, h3{
       color: ${cores.corTitulo};
     }
 

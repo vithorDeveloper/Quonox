@@ -12,6 +12,8 @@ export const ContainerNavbar = styled.nav`
 
   padding: 1rem 0.5rem;
 
+  height: 28.5rem;
+
   h2 {
     font-size: 1rem;
 
