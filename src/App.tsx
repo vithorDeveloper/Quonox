@@ -1,17 +1,21 @@
-import { StyleGlobal, Container } from './style/CSSglobal'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { StyleGlobal } from './style/CSSglobal'
 import { Header } from './components/Header'
-import { NavBar } from './containers/Navbar'
-import { Content } from './containers/Content'
+import { Home } from './pages/Home'
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  }
+])
 
 function App() {
   return (
     <>
       <StyleGlobal />
       <Header />
-      <Container>
-        <NavBar />
-        <Content />
-      </Container>
+      <RouterProvider router={rotas} />
     </>
   )
 }

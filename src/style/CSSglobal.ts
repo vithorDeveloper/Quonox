@@ -24,6 +24,8 @@ export const StyleGlobal = createGlobalStyle`
     color: ${cores.corTexto};
 
     padding: 0 .5rem;
+
+    overflow-y: hidden;
     
     h1, h2, h3{
       color: ${cores.corTitulo};
