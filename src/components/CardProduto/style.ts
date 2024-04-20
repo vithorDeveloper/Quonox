@@ -12,7 +12,7 @@ export const ContainerCard = styled.section`
 
   padding: 0.5rem;
 
-  width: 16rem;
+  width: 15.5rem;
 
   .infos {
     h3 {

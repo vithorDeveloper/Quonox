@@ -2,11 +2,11 @@ import { Banner } from '../../components/Banner'
 import { ListaDeProdutos } from '../../containers/ListaProdutos'
 import { Game } from '../../models/games'
 
-import jogoBlack from '../../assets/1.png'
+import jogoBlack from '../../assets/BLACK.png'
 import { Container } from '../../style/CSSglobal'
 import { NavBar } from '../../containers/Navbar'
-import jogoGod from '../../assets/2.png'
-import jogoBomba from '../../assets/4.png'
+import jogoGod from '../../assets/GOD.png'
+import jogoBomba from '../../assets/BOMBA.png'
 import jogoBully from '../../assets/BULLY.png'
 import jogoGta from '../../assets/GTA.png'
 import jogoNeed from '../../assets/NEED.png'
@@ -51,7 +51,7 @@ const emBreve: Game[] = [
   {
     id: 2,
     backgroundImage: jogoGta,
-    nomeDoJogo: 'Gta',
+    nomeDoJogo: 'Gta San Andreas',
     descricao:
       'Uma série de jogos de ação-aventura em mundo aberto, onde os jogadores realizam missões e exploram cidades fictícias inspiradas em locais reais.',
     infos: ['06/09']
