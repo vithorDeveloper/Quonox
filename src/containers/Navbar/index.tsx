@@ -6,6 +6,7 @@ import {
   YoutubeLogo
 } from '@phosphor-icons/react'
 import { ContainerNavbar, Lista } from './style'
+import { Link } from 'react-router-dom'
 
 export const NavBar = () => (
   <>
@@ -14,7 +15,7 @@ export const NavBar = () => (
 
       <Lista className="listaCategorias">
         <li>
-          <a href="">RPG</a>
+          <Link to="/RPG">RPG</Link>
         </li>
         <li>
           <a href="">Ação</a>
