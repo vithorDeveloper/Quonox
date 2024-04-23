@@ -7,6 +7,7 @@ export const ContainerProdutos = styled.section`
   .conteudo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 0.5rem;
   }
 

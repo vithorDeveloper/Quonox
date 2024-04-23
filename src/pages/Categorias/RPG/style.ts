@@ -6,6 +6,10 @@ export const Conteudo = styled.div`
   overflow-y: auto;
   height: 53rem;
 
+  section {
+    margin-top: 0;
+  }
+
   scrollbar-color: ${cores.corFundo} ${cores.corFundo};
   scrollbar-width: thin;
 `

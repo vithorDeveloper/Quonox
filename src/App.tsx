@@ -7,7 +7,7 @@ import { RPG } from './pages/Categorias/RPG'
 const Rotas = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/" element={<RPG />} />
+    <Route path="/RPG" element={<RPG />} />
   </Routes>
 )
 
