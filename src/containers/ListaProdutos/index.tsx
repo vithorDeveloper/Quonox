@@ -3,7 +3,7 @@ import { ContainerProdutos } from './style'
 import { Game } from '../../models/games'
 
 type Props = {
-  titulo: string
+  titulo?: string
   games: Game[]
 }
 

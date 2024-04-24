@@ -9,6 +9,7 @@ export const ContainerTag = styled.span<Titulo>`
   padding: 0.3rem 0.5rem;
 
   font-size: ${(props) => (props.fontSize ? props.fontSize : '1rem')};
+  font-weight: bold;
 
   border-radius: 0.5rem;
 

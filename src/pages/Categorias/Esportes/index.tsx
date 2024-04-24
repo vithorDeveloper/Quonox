@@ -6,17 +6,17 @@ import { NavBar } from '../../../containers/Navbar'
 import { Container } from '../../../style/CSSglobal'
 import { ListaDeProdutos } from '../../../containers/ListaProdutos'
 
-import jogo1 from '../../../assets/rgp/1.png'
-import jogo2 from '../../../assets/rgp/2.png'
-import jogo3 from '../../../assets/rgp/3.png'
-import jogo4 from '../../../assets/rgp/4.png'
-import jogo5 from '../../../assets/rgp/5.png'
-import jogo6 from '../../../assets/rgp/6.png'
-import jogo7 from '../../../assets/rgp/7.png'
-import jogo8 from '../../../assets/rgp/8.png'
-import jogo9 from '../../../assets/rgp/9.png'
+import jogo1 from '../../../assets/esportes/1.png'
+import jogo2 from '../../../assets/esportes/2.png'
+import jogo3 from '../../../assets/esportes/3.png'
+import jogo4 from '../../../assets/esportes/4.png'
+import jogo5 from '../../../assets/esportes/5.png'
+import jogo6 from '../../../assets/esportes/6.png'
+import jogo7 from '../../../assets/esportes/7.png'
+import jogo8 from '../../../assets/esportes/8.png'
+import jogo9 from '../../../assets/esportes/9.png'
 
-const rpg: Game[] = [
+const esportes: Game[] = [
   {
     id: 1,
     backgroundImage: jogo1,
@@ -91,7 +91,7 @@ const rpg: Game[] = [
   }
 ]
 
-export const RPG = () => (
+export const Esportes = () => (
   <Container>
     <NavBar />
     <Conteudo>
@@ -99,10 +99,10 @@ export const RPG = () => (
         <Link to="/">
           <ArrowLeft size={30} />
         </Link>
-        <h2>Jogos RPG</h2>
+        <h2>Jogos De Esportes</h2>
       </HeaderPages>
 
-      <ListaDeProdutos games={rpg} />
+      <ListaDeProdutos games={esportes} />
     </Conteudo>
   </Container>
 )

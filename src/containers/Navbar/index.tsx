@@ -21,7 +21,7 @@ export const NavBar = () => (
           <a href="">Ação</a>
         </li>
         <li>
-          <a href="">Esportes</a>
+          <Link to="/Esportes">Esportes</Link>
         </li>
         <li>
           <a href="">Simulação</a>
