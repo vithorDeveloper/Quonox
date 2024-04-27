@@ -22,13 +22,14 @@ export const HeaderPages = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   h2 {
     background-color: ${cores.corButton};
     color: ${cores.corFundo};
 
     font-weight: normal;
+    font-size: 1.2rem;
 
     border-radius: 0.5rem;
 

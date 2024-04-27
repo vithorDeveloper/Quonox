@@ -18,19 +18,19 @@ export const NavBar = () => (
           <Link to="/RPG">RPG</Link>
         </li>
         <li>
-          <a href="">Ação</a>
+          <Link to="/Acao">Ação</Link>
         </li>
         <li>
           <Link to="/Esportes">Esportes</Link>
         </li>
         <li>
-          <a href="">Simulação</a>
+          <Link to="/Simulacao">Simulacao</Link>
         </li>
         <li>
-          <a href="">Estratégia</a>
+          <Link to="/Estrategia">Estratégia</Link>
         </li>
         <li>
-          <a href="">FPS</a>
+          <Link to="/FPS">FPS</Link>
         </li>
       </Lista>
 

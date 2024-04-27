@@ -1,7 +1,8 @@
 import { Desktop, GameController } from '@phosphor-icons/react'
 import bannerImg from '../../assets/blur60.png'
-import { ButtonBanner, SectionBanner } from './style'
+import { SectionBanner } from './style'
 import { Tag } from '../Tag'
+import { Link } from 'react-router-dom'
 
 export const Banner = () => (
   <SectionBanner backgroundImage={bannerImg}>
@@ -21,6 +22,6 @@ export const Banner = () => (
       <p>Por R$ 59,90</p>
     </div>
 
-    <ButtonBanner>Aproveitar</ButtonBanner>
+    <Link to={'/DetalhesProdutos'}>Aproveitar</Link>
   </SectionBanner>
 )

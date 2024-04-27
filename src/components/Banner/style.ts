@@ -50,31 +50,31 @@ export const SectionBanner = styled.section<SectionBannerProps>`
     top: 1rem;
     left: 6rem;
   }
-`
 
-export const ButtonBanner = styled.button`
-  background-color: transparent;
-  color: ${cores.corTitulo};
+  a {
+    background-color: transparent;
+    color: ${cores.corTitulo};
 
-  border: 1px solid ${cores.corTitulo};
-  border-radius: 0.5rem;
+    border: 1px solid ${cores.corTitulo};
+    border-radius: 0.5rem;
 
-  font-size: 1rem;
+    font-size: 1rem;
 
-  padding: 0.5rem;
+    padding: 0.5rem;
 
-  position: absolute;
-  bottom: 1rem;
-  right: 6rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 6rem;
 
-  transition: all 0.2s;
+    transition: all 0.2s;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  &:hover {
-    background-color: ${cores.corButton};
-    color: ${cores.corFundo};
+    &:hover {
+      background-color: ${cores.corButton};
+      color: ${cores.corFundo};
 
-    border: none;
+      border: none;
+    }
   }
 `
