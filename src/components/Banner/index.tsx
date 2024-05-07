@@ -1,5 +1,5 @@
 import { Desktop, GameController } from '@phosphor-icons/react'
-import bannerImg from '../../assets/blur60.png'
+import bannerImg from '../../assets/home/blur60.png'
 import { SectionBanner } from './style'
 import { Tag } from '../Tag'
 import { Link } from 'react-router-dom'

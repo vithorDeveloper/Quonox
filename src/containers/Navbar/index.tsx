@@ -18,7 +18,7 @@ export const NavBar = () => (
           <Link to="/RPG">RPG</Link>
         </li>
         <li>
-          <Link to="/Acao">Ação</Link>
+          <Link to="/Terror">Terror</Link>
         </li>
         <li>
           <Link to="/Esportes">Esportes</Link>
