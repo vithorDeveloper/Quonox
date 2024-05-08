@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const ContainerCard = styled.section`
+export const ContainerCard = styled(Link)`
   backdrop-filter: blur(5px) saturate(100%);
   background-color: rgba(37, 37, 40, 0.4);
 
@@ -13,6 +14,8 @@ export const ContainerCard = styled.section`
   padding: 0.5rem;
 
   width: 15.5rem;
+  text-decoration: none;
+  display: block;
 
   .infos {
     h3 {

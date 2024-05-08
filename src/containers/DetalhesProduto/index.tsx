@@ -7,9 +7,19 @@ import { Container } from './style'
 import { Tag } from '../../components/Tag'
 import { Button } from '../../components/Button'
 import { ButtonVoltar } from '../../components/ButtonVoltar'
+import { Game } from '../../pages/Home'
+import { useEffect, useState } from 'react'
 
 export const Detalhes = () => {
   const { id } = useParams()
+
+  const [game, setGame] = useState<Game>()
+
+  useEffect(() => {
+    fetch(`https://fake-api-tau.vercel.app/api/eplay/jogos/${id}`)
+      .then((res) => res.json())
+      .then((res) => setGame(res))
+  }, [])
 
   return (
     <>
