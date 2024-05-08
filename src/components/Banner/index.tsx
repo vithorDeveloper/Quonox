@@ -22,6 +22,6 @@ export const Banner = () => (
       <p>Por R$ 59,90</p>
     </div>
 
-    <Link to={'/DetalhesProdutos'}>Aproveitar</Link>
+    <Link to={'/DetalhesProduto'}>Aproveitar</Link>
   </SectionBanner>
 )

@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { StyleGlobal } from './style/CSSglobal'
-import { Header } from './components/Header'
+
 import { Home } from './pages/Home'
 import { RPG } from './pages/Categorias/RPG'
+import { Header } from './components/Header'
+import { FPS } from './pages/Categorias/FPS'
+import { StyleGlobal } from './style/CSSglobal'
+import { Terror } from './pages/Categorias/Terror'
+import { Detalhes } from './containers/DetalhesProduto'
 import { Esportes } from './pages/Categorias/Esportes'
 import { Simulacao } from './pages/Categorias/Simulacao'
 import { Estrategia } from './pages/Categorias/Estrategia'
-import { FPS } from './pages/Categorias/FPS'
-import { Terror } from './pages/Categorias/Terror'
 
 const Rotas = () => (
   <Routes>
@@ -18,6 +20,7 @@ const Rotas = () => (
     <Route path="/Esportes" element={<Esportes />} />
     <Route path="/Simulacao" element={<Simulacao />} />
     <Route path="/Estrategia" element={<Estrategia />} />
+    <Route path="/Detalhesproduto/:id" element={<Detalhes />} />
   </Routes>
 )
 
